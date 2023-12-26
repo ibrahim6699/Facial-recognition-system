@@ -23,4 +23,3 @@ Key dependencies:
 4. ### numpy
 5. ### opencv-python
 
-## Usage
