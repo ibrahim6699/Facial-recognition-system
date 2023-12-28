@@ -33,7 +33,7 @@ def classify_face(image):
         matches = fr.compare_faces(faces_encoded, face_encoding)
         name = "Unknown"
 
-        # use the known face with the smallest distance to the new face
+        # use the known face with the smallest distance close to the new face
         face_distances = fr.face_distance(faces_encoded, face_encoding)
         best_match_index = np.argmin(face_distances)
         if matches[best_match_index]:
